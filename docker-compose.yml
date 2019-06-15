@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  builder:
+    build: .
+    command: sh copy.sh
+    volumes:
+      - ./build:/app/build
+      - ./copy.sh:/app/copy.sh
